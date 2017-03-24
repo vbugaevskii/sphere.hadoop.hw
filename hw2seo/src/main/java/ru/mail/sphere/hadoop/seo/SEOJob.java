@@ -17,7 +17,7 @@ public class SEOJob extends Configured implements Tool {
         Job job = Job.getInstance(getConf());
 
         job.setJarByClass(SEOJob.class);
-        job.setJobName(SEOJob.class.getCanonicalName());
+        job.setJobName("HW2: SEO Optimization");
 
         FileInputFormat.addInputPath(job, new Path(input));
         FileOutputFormat.setOutputPath(job, new Path(output));
