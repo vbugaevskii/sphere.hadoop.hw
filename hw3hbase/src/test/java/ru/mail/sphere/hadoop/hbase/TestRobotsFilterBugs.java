@@ -31,10 +31,10 @@ public class TestRobotsFilterBugs {
 
     @Test
     public void test02() throws RobotsFilter.BadFormatException {
-        String disallow = "Disallow: /upload/site1" +
-                "Disallow: /ufms" +
-                "Disallow: */index.php$" +
-                "ADisallow: */foreign/new" +
+        String disallow = "Disallow: /upload/site1\n" +
+                "Disallow: /ufms\n" +
+                "Disallow: */index.php$\n" +
+                "Disallow: */foreign/new\n" +
                 "Disallow: */new";
         RobotsFilter filter = new RobotsFilter(disallow);
 
